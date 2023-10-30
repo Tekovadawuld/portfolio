@@ -64,8 +64,8 @@
 
     <section id="Music">
 
-        <h2>Music</h2>
-<div class="between"></div>
+      <h2>Music</h2>
+        <div class="between"></div>
         <p id="studies">I began my journey with the French horn when I switched from trumpet in 8th grade.</p> 
 
         <p>I received my bachelor's degree in French Horn Perfomance from Brigham Young University, studying with Jon Klein, and continued my studies with John Turman at the University of Washington. There, I received a Master's degree in French horn performance</p>
@@ -76,25 +76,29 @@
     
 <section id="form"> 
   <form>
-    <label for="email">Want my newsletter?</label>
-<input type="email" id="email" required name="email" placeholder="example@domain.com">
-
-    <label for="interests">Did any of my projects catch your eye?
-      <label>
-        <input value="tower" id="tower" type="checkbox" required name="tower" class="inline"/> 
+    <fieldset>
+      <label for="email">Want my newsletter?</label>
+        <input type="email" id="email" required name="email" placeholder="example@domain.com">
+    </fieldset>
+      
+    <fieldset>
+      <h3>Did any of my projects catch your eye?</h3> 
+          <label for="tower">
+              <input value="tower" id="tower" type="checkbox" required name="tower" class="inline"/> 
           Escape the Prince's Tower
-      </label>
-       <label>
+        <label for="shapes'>
         <input 
           value="shapes" id="shapes" type="checkbox" required name="shapes" class="inline"/> 
           Shapes and Shadows
       </label>
-       <label>
+       <label for="lessons">
         <input value="lessons" id="lessons" type="checkbox" required name="lessons" class="inline"/> 
           Horn lessons
       </label>
-
-    <label for="referrer">How did you hear about me?
+    </fieldset>
+      
+    <fieldset>
+      <label for="referrer">How did you hear about me?
           <select id="referrer" name="referrer">
             <option value="">(select one)</option>
             <option value="1">Online</option>
@@ -102,8 +106,11 @@
             <option value="3">A friend</option>
             <option value="4">Advertisement</option>
           </select>
-
+    </fieldset>
+      
+      <fieldset>
     <input type="submit" name="submit" value="submit">
+      </fieldset>
     </form>
 </section>
 </div>
